@@ -1,0 +1,9 @@
+
+ <%= link_to "Wikinimous", articles_path%>
+ <br><br>
+ <%= link_to "New Article", new_article_path %>
+<br><br>
+<h2><%= @article.title %> <%= link_to "✏️", edit_article_path(@article)%>
+<%= link_to "🗑️", article_path(@article),  data: {turbo_method: :delete, turbo_confirm: "Delete #{@article.title} ?"}%>
+</h2>
+<p><%= @article.content %></p>

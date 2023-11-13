@@ -1,0 +1,10 @@
+
+
+<%= link_to "Wikinimous", articles_path%>
+ <br><br>
+ <%= link_to "New Article", new_article_path %>
+ <h1>New Article</h1>
+<%= render "form", article: @article%>
+<br>
+
+<%= link_to "↩︎ back", articles_path%>
